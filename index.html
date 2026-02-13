@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MarketMind</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>MarketMind - Sales Intelligence</h1>
+
+<div class="container">
+
+    <form id="saleForm">
+        <label>Enter Sale Amount:</label><br><br>
+        <input type="number" id="amount" step="0.01" required>
+        <br><br>
+        <button type="submit">Add Sale</button>
+    </form>
+
+    <p id="error" class="error"></p>
+
+    <h2>Sales Records</h2>
+
+    <table id="salesTable">
+        <tr>
+            <th>#</th>
+            <th>Amount</th>
+        </tr>
+    </table>
+
+    <h2 id="total">Total Sales: ₹0</h2>
+    <h2 id="prediction">Predicted Next Month: ₹0</h2>
+    <p id="suggestion"></p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
